@@ -98,6 +98,8 @@ def reset():
             buttons[i][j]['text']=''
             buttons[i][j]['state']=ACTIVE
             board[i][j]=0
+    global depth
+    depth=8
     
 reset_btn=customtkinter.CTkButton(master=root, font = ("Normal", 20),text="Reset game",
                         command = reset)
